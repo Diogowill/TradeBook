@@ -3,11 +3,25 @@
     package="pooa20161.iff.edu.br.trocalivros">
 
     <application
+        android:name="com.orm.SugarApp"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <meta-data
+            android:name="DATABASE"
+            android:value="livros.db" />
+        <meta-data
+            android:name="VERSION"
+            android:value="3" />
+        <meta-data
+            android:name="QUERY_LOG"
+            android:value="false" />
+        <meta-data
+            android:name="DOMAIN_PACKAGE_NAME"
+            android:value="pooa20161.iff.edu.br.trocalivros" />
+
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -20,7 +34,8 @@
         <activity android:name=".Nova_Categoria" />
         <activity android:name=".troca" />
         <activity android:name=".Login" />
-        <activity android:name=".ListarLivros"></activity>
+        <activity android:name=".ListarLivros" />
+        <activity android:name=".single_livro"></activity>
     </application>
 
 </manifest>

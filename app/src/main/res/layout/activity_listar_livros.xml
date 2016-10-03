@@ -7,7 +7,8 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="pooa20161.iff.edu.br.trocalivros.ListarLivros">
+    tools:context="pooa20161.iff.edu.br.trocalivros.ListarLivros"
+    android:background="@color/abc_search_url_text_normal">
 
     <Button
         style="?android:attr/buttonStyleSmall"
@@ -26,20 +27,11 @@
         android:layout_alignParentBottom="true"
         android:layout_alignParentStart="true" />
 
-    <TextView
+    <ListView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Assim Falou Zaratrusta"
-        android:id="@+id/textView4"
+        android:id="@+id/lista_livros"
         android:layout_alignParentTop="true"
-        android:layout_alignParentStart="true" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="As viagens de Guliver"
-        android:id="@+id/textView5"
-        android:layout_below="@+id/textView4"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentEnd="true" />
 
 </RelativeLayout>

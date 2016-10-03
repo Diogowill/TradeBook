@@ -7,31 +7,50 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="pooa20161.iff.edu.br.trocalivros.MainActivity">
+    tools:context="pooa20161.iff.edu.br.trocalivros.MainActivity"
+    android:background="@color/abc_search_url_text_normal">
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Registro"
-        android:id="@+id/registro_btn"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentEnd="true" />
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Login"
-        android:id="@+id/login_btn"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentStart="true" />
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/imageView2"
+        android:src="@drawable/livro"
+        android:layout_marginTop="122dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="Trocalivro"
-        android:id="@+id/textView"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="140dp" />
+        android:text="Trade Book"
+        android:id="@+id/textView5"
+        android:layout_below="@+id/imageView2"
+        android:layout_centerHorizontal="true" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Registro"
+            android:id="@+id/registro_btn"
+            android:layout_alignBaseline="@+id/login_btn"
+            android:layout_alignBottom="@+id/login_btn"
+            android:layout_centerHorizontal="true" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Login"
+            android:id="@+id/login_btn"
+            android:layout_alignParentBottom="true"
+            android:layout_alignStart="@+id/imageView2"
+            android:layout_marginBottom="73dp" />
+    </LinearLayout>
 </RelativeLayout>

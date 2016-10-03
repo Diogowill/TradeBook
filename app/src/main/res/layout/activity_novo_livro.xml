@@ -7,7 +7,8 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="pooa20161.iff.edu.br.trocalivros.Novo_livro">
+    tools:context="pooa20161.iff.edu.br.trocalivros.Novo_livro"
+    android:background="@color/abc_search_url_text_normal">
 
     <TextView
         android:layout_width="wrap_content"
@@ -21,7 +22,7 @@
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/editText6"
+        android:id="@+id/nl_codigo"
         android:layout_below="@+id/textView3"
         android:layout_alignParentStart="true"
         android:layout_marginTop="68dp"
@@ -31,53 +32,53 @@
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/editText7"
-        android:layout_below="@+id/editText6"
+        android:id="@+id/nl_titulo"
+        android:layout_below="@+id/nl_codigo"
         android:layout_alignParentStart="true"
-        android:layout_alignEnd="@+id/editText6"
+        android:layout_alignEnd="@+id/nl_codigo"
         android:hint="Titulo" />
 
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/editText8"
-        android:layout_below="@+id/editText7"
+        android:id="@+id/nl_autor"
+        android:layout_below="@+id/nl_titulo"
         android:layout_alignParentStart="true"
-        android:layout_alignEnd="@+id/editText6"
+        android:layout_alignEnd="@+id/nl_codigo"
         android:hint="Autor" />
 
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/editText9"
-        android:layout_below="@+id/editText8"
+        android:id="@+id/nl_isbn"
+        android:layout_below="@+id/nl_autor"
         android:layout_alignParentStart="true"
-        android:layout_alignEnd="@+id/editText6"
+        android:layout_alignEnd="@+id/nl_codigo"
         android:hint="ISBN" />
 
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/editText10"
-        android:layout_below="@+id/editText9"
+        android:id="@+id/nl_editora"
+        android:layout_below="@+id/nl_isbn"
         android:layout_alignParentStart="true"
-        android:layout_alignEnd="@+id/editText6"
+        android:layout_alignEnd="@+id/nl_codigo"
         android:hint="Editora" />
 
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/editText11"
-        android:layout_below="@+id/editText10"
+        android:id="@+id/nl_descricao"
+        android:layout_below="@+id/nl_editora"
         android:layout_alignParentStart="true"
-        android:layout_alignEnd="@+id/editText6"
+        android:layout_alignEnd="@+id/nl_codigo"
         android:hint="Descrição" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Cadastrar"
-        android:id="@+id/cadastrar_livro"
+        android:id="@+id/nl_cadastrar"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true" />
 </RelativeLayout>
